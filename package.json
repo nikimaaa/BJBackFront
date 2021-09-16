@@ -1,0 +1,49 @@
+{
+  "name": "redu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "watch": "webpack --config webpack.config.js --watch --mode development",
+    "serve": "webpack serve --config webpack.config.js --mode development"
+  },
+  "author": "Nikita Maliuga <nikima.vd@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-redux": "^3.3.2",
+    "eslint-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.40.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.0",
+    "webpack-serve": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "classnames": "^2.3.1",
+    "core-js": "^3.17.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.9",
+    "reselect": "^4.0.0"
+  }
+}
