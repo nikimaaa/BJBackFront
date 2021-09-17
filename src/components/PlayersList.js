@@ -14,7 +14,7 @@ import {
 
 const PlayersList = ({players, activePlayer, winners, loading}) => {
 
-    // console.log(players)
+    console.log('activePlayer', activePlayer)
 
     if (winners.length > 0) {
         return (

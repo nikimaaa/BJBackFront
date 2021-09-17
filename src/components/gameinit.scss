@@ -1,0 +1,95 @@
+$darkBg: #24242C;
+$loseBg: #32323d;
+$lightBg: #464656;
+$activeBg: #4fa171;
+$removeBg: #ff6969;
+
+@mixin subfield {
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 1 1 auto;
+  display: flex;
+  font-size: 15px;
+}
+
+@mixin button {
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  outline: 0;
+  font-size: 15px;
+  transition: background-color .3s ease-out;
+}
+
+.init__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  &__subfield {
+    @include subfield;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    border: 0px;
+    outline: none;
+    padding: 5px 10px;
+    flex: 5 5 auto;
+    font-size: 14px;
+  }
+
+  &__button {
+    padding: 5px 10px;
+    background: $activeBg;
+    width: 50px;
+    @include button;
+
+    &:active, &:focus, &:hover {
+      background-color: darken($activeBg, 10%);
+    }
+
+    &-submit {
+      border-radius: 5px;
+      margin-top: 10px;
+      flex: 1 1 auto;
+      width: 100%;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+
+  &__subfield {
+    @include subfield;
+    background: $lightBg;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    font-size: 14px;
+    flex: 1 1 auto;
+    padding: 5px 10px;
+  }
+}
+
+.remove__button {
+
+  background: $removeBg;
+  @include button;
+  width: 50px;
+
+  &:active, &:focus, &:hover {
+    background-color: lighten($removeBg, 8%);
+  }
+}

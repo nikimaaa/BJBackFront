@@ -17,11 +17,8 @@ const setLoadHandler = (state, {status}) => {
 
 //TODO: add winers to state
 const updateDataHandler = (state, {payload}) => {
-    const {activePlayer, players} = payload.game
-    // console.log('payload.game', payload.game)
-    // console.log('players', players)
-    // console.log('activePlayer', activePlayer)
-    return {...state, players: [...players], activePlayer: {...activePlayer}}
+    const {activePlayer, players, winners} = payload.game
+    return {...state, players: [...players], activePlayer: activePlayer, winners: [...winners]}
 }
 
 export const playersReducer = handleActions({

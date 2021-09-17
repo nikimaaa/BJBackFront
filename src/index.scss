@@ -25,10 +25,10 @@ body {
   font-family: Roboto, sans-serif;
   color: #fff;
   font-size: 20px;
+  background: $darkBg;
 }
 
 .wrapper {
-  display: flex;
   height: 100vh;
 }
 
@@ -135,3 +135,11 @@ body {
     height: 100%;
   }
 }
+
+.game__wrapper{
+  display: flex;
+  height: 100%;
+}
+
+
+
